@@ -1,16 +1,21 @@
 {
-  "name": "vite-plugin-auto-import-source",
+  "name": "vite-plugin-react-directives",
   "version": "1.0.0",
-  "main": "dist/rollup-plugin-babel.cjs.js",
-	"module": "dist/rollup-plugin-babel.esm.js",
+  "main": "dist/vite-plugin-react-directives.cjs.js",
+  "module": "dist/vite-plugin-react-directives.esm.js",
   "repository": "git@github.com:taixw2/vite-plugin-auto-import-source.git",
   "author": "<xin.ouyang@compass.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
   "devDependencies": {
     "@babel/generator": "^7.14.5",
     "@babel/parser": "^7.14.7",
     "@babel/traverse": "^7.14.7",
     "@babel/types": "^7.14.5",
+    "babel-plugin-react-directives": "^2.0.1",
     "rollup": "^2.53.0"
   },
   "dependencies": {
